@@ -13,7 +13,7 @@ const { checkForAuthentication, restrictTo } = require("./middlewares/auth");
 const app = express();
 const PORT = 8001;
 
-connectToMongoDB('mongodb://127.0.0.1:27017/short-url')
+connectToMongoDB('mongodb+srv://vipul:Wgzf4PjhJTVCOA2n@book-store.l0dr9.mongodb.net/?retryWrites=true&w=majority&appName=Book-store')
     .then(() => console.log("mongoDB connected"));
 
 app.set("view engine", "ejs");
